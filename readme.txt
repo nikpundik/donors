@@ -1,4 +1,4 @@
-Initialize:
+Initialize: 
 
 	Run the application:
 		node Code/app.js
