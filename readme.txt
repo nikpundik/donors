@@ -1,9 +1,11 @@
 Initialize: 
 
 	Run the application:
+		npm install
 		node Code/app.js
 
 	Run the tests:
+		(with jasmine installed or npm install jasmine)
 		jasmine
 
 Missing requirements:
