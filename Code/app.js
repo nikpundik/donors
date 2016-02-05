@@ -45,6 +45,8 @@ io.on('connection', function(socket) {
 
 // server start
 
-http.listen(3000, function () {
+var port = process.env.PORT || 8080;
+
+http.listen(port, function () {
 	console.log('Donors server started..');
 });
