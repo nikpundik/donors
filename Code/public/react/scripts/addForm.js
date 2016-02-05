@@ -25,7 +25,7 @@ var AddForm = React.createClass({
   	},
 
   	handleSubmitResponse: function(response) {
-  		if (response !== false) {
+  		if (response.errors === undefined) {
   			this.setState({url: '/donor/' + response});
 		} else {
 			var errors = '';
