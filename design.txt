@@ -1,0 +1,41 @@
+
+
+System design:
+
+	SERVER
+		api:
+			get donor
+			add donor
+				broadcast socket updated donors
+			update donor
+				broadcast socket updated donors
+			remove donor
+				broadcast socket updated donors
+		socket
+			get donors
+		static
+			serve public/react folder
+
+	CLIENT
+		single page app with react with mainly two components:
+			map:
+				SERVER socket get donors
+				SERVER socket get donors on 
+					socket updated donors
+				SERVER api add donor
+			editForm:
+				SERVER api update donor
+				SERVER api remove donor
+
+Technologies:
+
+	SERVER node.js, express, socket.io, mongoose, body-parser
+	DB mongodb
+	CLIENT react, react-router, babel, google-maps, jquery
+
+
+
+Details:
+	
+	Simple react router manages map page and profile page.
+	On map page client listen on socket for donors and display them on the map.
